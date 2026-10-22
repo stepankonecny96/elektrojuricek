@@ -145,3 +145,7 @@ body{padding-bottom:58px}
 .steps .n{position:absolute;left:0;top:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--yel);color:var(--yel-ink);font-weight:800;font-size:14px;letter-spacing:.06em}
 .steps h3{margin:8px 0 6px} .steps p{margin:0;color:var(--mute);font-size:15px}
 @media(min-width:800px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))} .steps li{padding:68px 28px 0 0} .steps li::before{left:44px;right:0;top:21px;bottom:auto;width:auto;height:2px} .steps li:last-child::before{display:none}}
+.hero-photo{align-items:flex-end;padding-bottom:56px}
+.hero-photo::before{background:linear-gradient(180deg,rgba(18,17,16,.7),rgba(18,17,16,0) 22%,rgba(18,17,16,0) 50%,rgba(18,17,16,.8) 85%,var(--bg))}
+.hero-photo h1{font-size:clamp(26px,3.6vw,40px);margin:0 0 22px}
+.hero-photo~* .nav-links a,.nav-links a{text-shadow:0 1px 3px rgba(0,0,0,.5)}
