@@ -151,3 +151,4 @@ body{padding-bottom:58px}
 .hero-photo~* .nav-links a,.nav-links a{text-shadow:0 1px 3px rgba(0,0,0,.5)}
 .hero picture{position:absolute;inset:0;z-index:-2}
 @media(max-width:700px){.hero-photo img{object-position:center 30%}}
+@media(min-width:701px){.hero-photo img{object-position:center 12%}}
