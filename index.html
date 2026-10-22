@@ -23,7 +23,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="foto/hero-profil.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" href="foto/hero-profil-m.webp" type="image/webp" media="(max-width:700px)" fetchpriority="high">
+<link rel="preload" as="image" href="foto/hero-profil.webp" type="image/webp" media="(min-width:701px)" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Electrician","name":"Elektro Juříček","taxID":"07492740","url":"https://elektrojuricek.cz/","telephone":"+420606726086","email":"elektro.juricek@seznam.cz","image":"https://elektrojuricek.cz/foto/og.jpg","address":{"@type":"PostalAddress","streetAddress":"Pod nemocnicí 2251","addressLocality":"Hranice","postalCode":"753 01","addressCountry":"CZ"},"description":"Elektrikář v Hranicích a okolí do 100 km (Zlín, Olomouc, Odry): elektroinstalace novostaveb a rekonstrukcí, rozvaděče, revize, opravy poruch, hromosvody, fotovoltaické elektrárny na klíč, nabíjení elektromobilů, elektrické podlahové vytápění, klimatizace, návrhy osvětlení.","areaServed":[{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":49.548,"longitude":17.735},"geoRadius":"100000"},{"@type":"City","name":"Hranice"},{"@type":"City","name":"Zlín"},{"@type":"City","name":"Olomouc"},{"@type":"City","name":"Odry"}],"priceRange":"$$","sameAs":["https://www.facebook.com/people/Elektro-Ju%C5%99%C3%AD%C4%8Dek/61575579640035/"],"knowsAbout":["Elektroinstalace","Rozvaděče","Revize","Opravy poruch","Hromosvody","Fotovoltaika","Nabíjení elektromobilů","Vytápění a klimatizace","Osvětlení"]}</script>
 </head>
@@ -42,11 +43,11 @@
 </div></div>
 <main>
 <header class="hero hero-photo">
-  <img src="foto/hero-profil.webp" alt="Elektrikář Juříček u servisní dodávky Elektro Juříček" width="1920" height="1280" fetchpriority="high">
+  <picture><source media="(max-width:700px)" srcset="foto/hero-profil-m.webp" width="1290" height="2293"><img src="foto/hero-profil.webp" alt="Elektrikář Juříček u servisní dodávky Elektro Juříček" width="2560" height="1707" fetchpriority="high"></picture>
   <div class="hero-in">
     <h1>Elektrikář Hranice, Zlín, Olomouc a okolí</h1>
     <div class="ctas">
-      <a href="tel:+420606726086" class="btn btn-y">Zavolat 606 726 086</a>
+      <a href="tel:+420606726086" class="btn btn-y">Zavolat</a>
       <a href="#poptavka" class="btn btn-o">Nezávazná poptávka</a>
     </div>
   </div>

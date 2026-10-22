@@ -149,3 +149,5 @@ body{padding-bottom:58px}
 .hero-photo::before{background:linear-gradient(180deg,rgba(18,17,16,.7),rgba(18,17,16,0) 22%,rgba(18,17,16,0) 50%,rgba(18,17,16,.8) 85%,var(--bg))}
 .hero-photo h1{font-size:clamp(26px,3.6vw,40px);margin:0 0 22px}
 .hero-photo~* .nav-links a,.nav-links a{text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.hero picture{position:absolute;inset:0;z-index:-2}
+@media(max-width:700px){.hero-photo img{object-position:center 30%}}
