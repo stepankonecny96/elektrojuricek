@@ -132,3 +132,16 @@ body{padding-bottom:58px}
   .call{font-size:0;gap:0;padding:0 14px;min-height:46px} .call svg{width:18px;height:18px}
 }
 @media(min-width:800px){.burger,.menu-toggle{display:none}}
+.pgal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:800px){.pgal{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr))} .stat+.stat{border-top:0} .stat:nth-child(even){border-left:1px solid var(--line)} .stat:nth-child(n+3){border-top:1px solid var(--line)}
+@media(min-width:800px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))} .stat:nth-child(n+3){border-top:0} .stat+.stat{border-left:1px solid var(--line)}}
+.quote footer{display:flex;align-items:center;gap:14px}
+.stars{color:var(--yel);font-size:16px;letter-spacing:.12em}
+.steps{list-style:none;margin:0;padding:0;display:grid}
+.steps li{position:relative;padding:0 0 36px 68px}
+.steps li::before{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:var(--line)}
+.steps li:last-child{padding-bottom:0} .steps li:last-child::before{display:none}
+.steps .n{position:absolute;left:0;top:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--yel);color:var(--yel-ink);font-weight:800;font-size:14px;letter-spacing:.06em}
+.steps h3{margin:8px 0 6px} .steps p{margin:0;color:var(--mute);font-size:15px}
+@media(min-width:800px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))} .steps li{padding:68px 28px 0 0} .steps li::before{left:44px;right:0;top:21px;bottom:auto;width:auto;height:2px} .steps li:last-child::before{display:none}}
