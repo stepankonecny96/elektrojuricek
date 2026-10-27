@@ -11,7 +11,8 @@ document.body.appendChild(d);}
 window.ejCookies=function(){try{localStorage.removeItem(K)}catch(x){}bar();};
 var v=null;try{v=localStorage.getItem(K)}catch(x){}
 if(v==='1')load();
-document.addEventListener('DOMContentLoaded',function(){if(v===null)bar();
+document.addEventListener('DOMContentLoaded',function(){var mt=document.getElementById('menu-toggle');if(mt)document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){mt.checked=false;});});
+if(v===null)bar();
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"]');if(a)ev('phone_click',{link_url:a.href,page:location.pathname});});
 var f=document.getElementById('poptavka');if(f)f.addEventListener('submit',function(){ev('generate_lead',{method:'formular'});});});
 })();
